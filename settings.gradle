@@ -1,1 +1,11 @@
 rootProject.name = 'mars-footprint'
+include 'spot-management'
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        libs {
+            library('google.guava', 'com.google.guava:guava:32.1.2-jre')
+            library('mybatis.spring.boot', 'org.mybatis.spring.boot:mybatis-spring-boot-starter:3.0.2')
+        }
+    }
+}
